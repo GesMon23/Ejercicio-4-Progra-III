@@ -39,19 +39,19 @@
                         plan_Bronce = 100;
                         plan_Oro = 200;
                         plan_Plati = 300;
-                        servicios = "Telefonía: \n\t";
+                        servicios = "\tTelefonía: \n\t";
                         break;
                     case 2:
                         plan_Bronce = 150;
                         plan_Oro = 250;
                         plan_Plati = 350;
-                        servicios = "Cable: \n\t";
+                        servicios = "\tCable: \n\t";
                         break;
                     case 3:
                         plan_Bronce = 200;
                         plan_Oro = 300;
                         plan_Plati = 400;
-                        servicios = "Internet: \n\t";
+                        servicios = "\tInternet: \n\t";
                         break;
                 }
                 Console.WriteLine("1. Plan Bronce:\t\t" + plan_Bronce);
@@ -64,17 +64,17 @@
                     case 1:
                         precio = plan_Bronce;
                         conta_Bronce += 1;
-                        servicios += "Plan Bronce:\t\tQ" + precio + "\n";
+                        servicios += "\tPlan Bronce:\t\tQ" + precio + "\n";
                         break;
                     case 2:
                         precio = plan_Oro;
                         conta_Oro += 1;
-                        servicios += "Plan Oro:\t\tQ" + precio + "\n";
+                        servicios += "\tPlan Oro:\t\tQ" + precio + "\n";
                         break;
                     case 3:
                         precio = plan_Plati;
                         conta_Plati += 1;
-                        servicios += "Plan Platino:\t\tQ" + precio + "\n";
+                        servicios += "\tPlan Platino:\t\tQ" + precio + "\n";
                         break;
                 }
                 subtotal += precio;
@@ -133,10 +133,14 @@
         Console.WriteLine("Nombre:\t\t\t"+nombre+" "+apellidos);
         Console.WriteLine("Dirección:\t\t"+dire);
         Console.WriteLine("Código:\t\t\t"+codigo);
-        Console.WriteLine("Servicios contratados: \n\t" + servicios);
+        Console.WriteLine("Servicios contratados: \n" + srvcs_Contratados);
         Console.WriteLine("Subtotal: Q"+subtotal);
         Console.WriteLine("Costo de Instalación: Q"+cost_Inst);
         Console.WriteLine("Descuento realizado: Q" + desc);
+        Console.WriteLine("Gastos de instalación:   Q"+cost_Inst);
+        Console.WriteLine("Gastos de equipo técnico:   Q" + cost_Tec);
         Console.WriteLine("Total a pagar: Q" + total);
+        Console.WriteLine("-------------------------------------------------");
+        Console.WriteLine("-------------------------------------------------");
     }
 }
