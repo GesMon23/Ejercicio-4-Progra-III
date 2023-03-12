@@ -9,11 +9,11 @@
         Console.WriteLine("BIENVEIDO AL SISTEMA DE CONTRATACÍÓN DE SERVICIOS");
         Console.WriteLine("-------------------------------------------------");
         Console.WriteLine("----------POR FAVOR, INGRESA TUS DATOS-----------");
-        Console.Write("Nombre:\t\t");
+        Console.Write("Nombre:\t");
         nombre = Console.ReadLine();
-        Console.Write("Apellidos: \t");
+        Console.Write("Apellidos: ");
         apellidos = Console.ReadLine();
-        Console.Write("Dirección: \t");
+        Console.Write("Dirección: ");
         dire = Console.ReadLine();
         do
         {
@@ -54,9 +54,9 @@
                         servicios = "\tInternet: \n\t";
                         break;
                 }
-                Console.WriteLine("1. Plan Bronce:\t\t" + plan_Bronce);
-                Console.WriteLine("2. Plan Oro:\t\t" + plan_Oro);
-                Console.WriteLine("3. Plan Platinum:\t" + plan_Plati);
+                Console.WriteLine("1. Plan Bronce:\t\tQ" + plan_Bronce);
+                Console.WriteLine("2. Plan Oro:\t\tQ" + plan_Oro);
+                Console.WriteLine("3. Plan Platinum:\tQ" + plan_Plati);
                 Console.WriteLine("¿Qué plan es el que te deseas?");
                 op_Plan = int.Parse(Console.ReadLine());
                 switch (op_Plan)
@@ -64,17 +64,17 @@
                     case 1:
                         precio = plan_Bronce;
                         conta_Bronce += 1;
-                        servicios += "\tPlan Bronce:\t\tQ" + precio + "\n";
+                        servicios += "\tPlan Bronce:\tQ" + precio + "\n";
                         break;
                     case 2:
                         precio = plan_Oro;
                         conta_Oro += 1;
-                        servicios += "\tPlan Oro:\t\tQ" + precio + "\n";
+                        servicios += "\tPlan Oro:\tQ" + precio + "\n";
                         break;
                     case 3:
                         precio = plan_Plati;
                         conta_Plati += 1;
-                        servicios += "\tPlan Platino:\t\tQ" + precio + "\n";
+                        servicios += "\tPlan Platino:\tQ" + precio + "\n";
                         break;
                 }
                 subtotal += precio;
@@ -134,12 +134,11 @@
         Console.WriteLine("Dirección:\t\t"+dire);
         Console.WriteLine("Código:\t\t\t"+codigo);
         Console.WriteLine("Servicios contratados: \n" + srvcs_Contratados);
-        Console.WriteLine("Subtotal: Q"+subtotal);
-        Console.WriteLine("Costo de Instalación: Q"+cost_Inst);
-        Console.WriteLine("Descuento realizado: Q" + desc);
-        Console.WriteLine("Gastos de instalación:   Q"+cost_Inst);
-        Console.WriteLine("Gastos de equipo técnico:   Q" + cost_Tec);
-        Console.WriteLine("Total a pagar: Q" + total);
+        Console.WriteLine("Subtotal: \t\t\tQ"+subtotal);
+        Console.WriteLine("Descuento realizado: \t\tQ" + desc);
+        Console.WriteLine("Costo de Instalación: \t\tQ" + cost_Inst);
+        Console.WriteLine("Gastos de equipo técnico:   \tQ" + cost_Tec);
+        Console.WriteLine("Total a pagar: \t\t\tQ" + total);
         Console.WriteLine("-------------------------------------------------");
         Console.WriteLine("-------------------------------------------------");
     }
